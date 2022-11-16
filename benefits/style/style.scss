@@ -1,45 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'reset';
+
+$font-raleway: 'Raleway', sans-serif;
+
+@mixin containerRules {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0  15px;  
 }
+@mixin containerRulesTablet{
+    max-width: 1014px;
+    margin: 0 auto;
+    padding: 0  15px;
+}
+@mixin containerRulesMobile{
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 0  15px;
+}
+
 .benefits{
     padding-bottom: 116px;
     .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0  15px;
+        @include containerRules();
+        @media (min-width: 768px) and (max-width: 1024px) {
+            @include containerRulesTablet();
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+            @include containerRulesMobile();
+        }
        }
     .benefits__container{
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 88px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            column-gap: 20px;
+            row-gap: 49px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+            row-gap: 41px;
+        }
     }
 }
 .benefit{
     width: calc((100% - 60px) / 3);
-    .benefit__img{
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: calc((100% - 40px) / 3);
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+    }
+    &__img{
         width: 100px;
         height: 100px;
         margin: 0 auto 51px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+           width: 85px;
+           height: 85px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+           width: 75px;
+           height: 75px;
+        }
     }
-    .benefit__title{
+    &__title{
         text-align: center;
         margin-bottom: 42px;
-        font-family: 'Raleway', sans-serif;
+        font-family: $font-raleway;
         font-weight: 900;
         font-size: 24px;
         line-height: 28px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+            width: 100%;
+        }
     }
-    .benefit__text{
+    &__text{
         text-align: center;
-        font-family: 'Raleway', sans-serif;
+        font-family: $font-raleway;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
         color: #6C7279;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+    }
+}
 }
 
 

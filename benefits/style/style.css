@@ -12,6 +12,20 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits .container {
+    max-width: 1014px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits .container {
+    max-width: 310px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
 .benefits .benefits__container {
   display: flex;
   flex-wrap: wrap;
@@ -19,16 +33,50 @@
        column-gap: 30px;
   row-gap: 88px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits .benefits__container {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 49px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits .benefits__container {
+    row-gap: 41px;
+  }
+}
 
 .benefit {
   width: calc((100% - 60px) / 3);
 }
-.benefit .benefit__img {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefit {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit {
+    width: 100%;
+  }
+}
+.benefit__img {
   width: 100px;
   height: 100px;
   margin: 0 auto 51px;
 }
-.benefit .benefit__title {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefit__img {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__img {
+    width: 75px;
+    height: 75px;
+  }
+}
+.benefit__title {
   text-align: center;
   margin-bottom: 42px;
   font-family: "Raleway", sans-serif;
@@ -36,11 +84,33 @@
   font-size: 24px;
   line-height: 28px;
 }
-.benefit .benefit__text {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefit__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__title {
+    width: 100%;
+  }
+}
+.benefit__text {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #6C7279;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefit__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit__text {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
