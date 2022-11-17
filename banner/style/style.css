@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .activebox {
   position: fixed;
   top: 0;
@@ -17,7 +11,6 @@
   width: 100%;
   z-index: 1;
 }
-
 .activebox__container {
   display: flex;
   justify-content: space-between;
@@ -26,7 +19,19 @@
   max-width: 1170px;
   padding: 0;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .activebox__container {
+    max-width: 984px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .activebox__container {
+    max-width: 280px;
+    padding-top: 21px;
+    display: flex;
+    align-items: center;
+  }
+}
 .activebox__container::before {
   content: "";
   display: inline-block;
@@ -36,6 +41,27 @@
   top: 100%;
   left: 0;
   transform: translateY(-1px);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .activebox__container::before {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 1014px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 310px;
+  }
 }
 
 .activebox__img {
@@ -48,10 +74,12 @@
 
 .activebox__menu-items {
   display: flex;
-}
-
-.activebox__menu-item {
   list-style-type: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .activebox__menu-items {
+    display: none;
+  }
 }
 
 .activebox__menu-link {
@@ -71,7 +99,13 @@
   display: inline-block;
   position: relative;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .activebox__menu-link {
+    font-size: 12px;
+    line-heiht: 14px;
+    min-width: 112px;
+  }
+}
 .activebox__menu-link::before {
   content: "";
   width: 100%;
@@ -82,15 +116,12 @@
   top: 100%;
   transform: translateY(-100%);
 }
-
 .activebox__menu-link:hover::before {
   border-bottom: 3px solid #BABBC5;
 }
-
 .activebox__menu-link:active::before {
   border-bottom: 3px solid #E71414;
 }
-
 .activebox__menu-link:active {
   color: #E71414;
 }
@@ -107,6 +138,18 @@
   background-size: cover;
   background-position: center;
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    padding: 257px 0 126px;
+    margin-bottom: 78px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner {
+    padding: 106px 0 52px;
+    margin-bottom: 40px;
+  }
 }
 
 .banner::before {
@@ -138,6 +181,20 @@
   color: #FFFFFF;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner__title {
+    margin-bottom: 61.86px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner__title {
+    margin-bottom: 32.71px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
 
 .banner__text {
   width: 100%;
@@ -149,6 +206,20 @@
   line-height: 28px;
   color: #FFFFFF;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner__text {
+    margin-bottom: 89px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner__text {
+    margin-bottom: 49px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .banner_btn {
@@ -167,72 +238,20 @@
   border: none;
   padding: 26px;
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
-  .activebox__menu-link {
-    font-size: 12px;
-    line-heiht: 14px;
-    min-width: 112px;
-  }
-  .activebox__container {
-    max-width: 984px;
-  }
-  .banner {
-    padding: 257px 0 126px;
-    margin-bottom: 78px;
-  }
-  .container {
-    max-width: 1014px;
-  }
-  .banner__title {
-    margin-bottom: 61.86px;
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .banner__text {
-    margin-bottom: 89px;
-    font-size: 18px;
-    line-height: 21px;
-  }
   .banner_btn {
     max-width: 313px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
-  .activebox__menu-items {
-    display: none;
-  }
-  .activebox__container {
-    max-width: 280px;
-    padding-top: 21px;
-    display: flex;
-    align-items: center;
-  }
-  .activebox__container::before {
-    display: none;
-  }
-  .banner {
-    padding: 106px 0 52px;
-    margin-bottom: 40px;
-  }
-  .container {
-    max-width: 310px;
-  }
-  .banner__title {
-    margin-bottom: 32.71px;
-    font-size: 36px;
-    line-height: 42px;
-  }
-  .banner__text {
-    margin-bottom: 49px;
-    font-size: 14px;
-    line-height: 16px;
-  }
   .banner_btn {
     max-width: 280px;
     padding: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hamburger {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
