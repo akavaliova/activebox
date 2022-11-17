@@ -28,8 +28,6 @@
   .activebox__container {
     max-width: 280px;
     padding-top: 21px;
-    display: flex;
-    align-items: center;
   }
 }
 .activebox__container::before {
@@ -126,10 +124,6 @@
   color: #E71414;
 }
 
-.hamburger {
-  display: none;
-}
-
 .banner {
   padding: 230px 0 120px;
   margin-bottom: 116px;
@@ -151,7 +145,6 @@
     margin-bottom: 40px;
   }
 }
-
 .banner::before {
   content: "";
   display: block;
@@ -163,12 +156,10 @@
   top: 0;
   position: absolute;
 }
-
 .banner__container {
   position: relative;
   z-index: 1;
 }
-
 .banner__title {
   width: 100%;
   max-width: 1170px;
@@ -195,7 +186,6 @@
     line-height: 42px;
   }
 }
-
 .banner__text {
   width: 100%;
   max-width: 1170px;
@@ -221,7 +211,6 @@
     line-height: 16px;
   }
 }
-
 .banner_btn {
   width: 100%;
   max-width: 370px;
@@ -250,8 +239,15 @@
   }
 }
 
+.hamburger {
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .hamburger {
-    display: block;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
