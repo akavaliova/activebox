@@ -30,6 +30,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    opacity: 0;
+}
+.project__info:hover{
+    opacity: 1;
+}
+.project__info:active{
+    opacity: 1;
 }
 .project::before{
     content: '';
@@ -46,6 +53,10 @@
     background: #FF4343;
     opacity: 80%;
 }
+.project:active::before{
+    background: #B90C0C;
+    opacity: 80%;
+}
 .project__img{
     width: 100%;
     height: 100%;
@@ -57,7 +68,7 @@
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
-    color: black;
+    color: #FFFFFF;
     margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -67,7 +78,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: black;
+    color: #FFFFFF;
     text-align: center;
 }
 
