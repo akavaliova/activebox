@@ -23,7 +23,6 @@
     margin-bottom: 34.39px;
   }
 }
-
 .team__block {
   display: flex;
   -moz-column-gap: 30px;
@@ -82,7 +81,6 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .team__block-items {
   display: flex;
   -moz-column-gap: 6px;
@@ -100,11 +98,9 @@
          column-gap: 6.09px;
   }
 }
-
 .team__block-item {
   list-style-type: none;
 }
-
 .team__block-link {
   width: 39px;
   height: 39px;
@@ -113,7 +109,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .team__block-name {
   margin-bottom: 5.29px;
   font-family: "Raleway", sans-serif;
@@ -131,7 +126,6 @@
     margin-bottom: 4.61px;
   }
 }
-
 .team__block-position {
   margin-bottom: 17.86px;
   font-family: "Raleway", sans-serif;
@@ -151,7 +145,6 @@
     margin-bottom: 38.49px;
   }
 }
-
 .team__block-text {
   margin-bottom: 37.86px;
   font-family: "Raleway", sans-serif;
