@@ -49,12 +49,14 @@
 }
 .activebox__menu-items {
   display: flex;
-  list-style-type: none;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .activebox__menu-items {
     display: none;
   }
+}
+.activebox__menu-item {
+  list-style-type: none;
 }
 .activebox__menu-link {
   padding-top: 36px;

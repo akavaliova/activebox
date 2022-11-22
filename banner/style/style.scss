@@ -10,7 +10,6 @@
     left: 0;
     width: 100%;
     z-index: 1;
-
     &__container{
         display: flex;
         justify-content: space-between;
@@ -18,7 +17,6 @@
         position: relative;
         max-width: 1170px;
         padding: 0;
-
         &::before{
             content: "";
             display: inline-block;
@@ -40,14 +38,18 @@
         justify-content: center;
         align-items: center;
     }
-    &__menu-items{
+    &__menu{
+        &-items{
         display: flex;
-        list-style-type: none;
+        
         @media (min-width: 320px) and (max-width: 767px){
             display: none;
         }
     }
-    &__menu-link{
+    &-item{
+        list-style-type: none;
+    }
+    &-link{
         padding-top: 36px;
         padding-bottom: 36px;
         padding-left: 10px;
@@ -89,6 +91,7 @@
         &:active{
             color: #E71414;
         }
+    }
     }
 }
 .banner{
