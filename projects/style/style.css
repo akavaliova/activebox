@@ -49,12 +49,12 @@
   z-index: 1;
 }
 .project__info:hover {
-  background: #FF4343;
-  opacity: 80%;
+  background: rgba(255, 67, 67, 0.8);
+  opacity: 100%;
 }
 .project__info:active {
-  background: #B90C0C;
-  opacity: 80%;
+  background: rgba(185, 12, 12, 0.8);
+  opacity: 100%;
 }
 .project__info-title {
   font-family: "Raleway", sans-serif;
