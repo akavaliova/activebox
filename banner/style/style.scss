@@ -38,12 +38,6 @@
 }
 .container{
     @include containerRules();
-    @media (min-width: 768px) and (max-width: 1024px){
-        max-width: 1014px;
-    }
-    @media (min-width: 320px) and (max-width: 767px){
-            max-width: 310px;
-        }
     }
 .activebox__img{
     width: 183.86px;
