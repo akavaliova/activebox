@@ -4,15 +4,26 @@
   box-sizing: border-box;
 }
 
-.benefits {
-  margin-bottom: 116px;
-}
-.benefits .container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.benefits .benefits__container {
+
+.benefits {
+  margin-bottom: 116px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits {
+    margin-bottom: 80.11px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits {
+    margin-bottom: 34.85px;
+  }
+}
+.benefits__container {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 30px;
@@ -20,14 +31,14 @@
   row-gap: 88px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .benefits .benefits__container {
+  .benefits__container {
     -moz-column-gap: 20px;
          column-gap: 20px;
     row-gap: 49px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .benefits .benefits__container {
+  .benefits__container {
     row-gap: 41px;
   }
 }
@@ -48,23 +59,25 @@
 .benefit__img {
   width: 100px;
   height: 100px;
-  margin: 0 auto 51px;
+  margin: 0 auto 29px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .benefit__img {
     width: 85px;
     height: 85px;
+    margin: 0 auto 24px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .benefit__img {
     width: 75px;
     height: 75px;
+    margin: 0 auto 20px;
   }
 }
 .benefit__title {
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 20.43px;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -74,11 +87,15 @@
   .benefit__title {
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 4px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .benefit__title {
     width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 2px;
   }
 }
 .benefit__text {
@@ -98,5 +115,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .benefit__text {
     width: 100%;
+    font-size: 14px;
+    line-height: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

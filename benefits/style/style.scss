@@ -1,19 +1,19 @@
 @import 'reset';
+@import 'var';
+@import 'mixins';
 
-$font-raleway: 'Raleway', sans-serif;
-
-@mixin containerRules {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0  15px;  
-}
-
+.container{
+    @include containerRules();
+   }
 .benefits{
     margin-bottom: 116px;
-    .container{
-        @include containerRules();
-       }
-    .benefits__container{
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-bottom: 80.11px;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        margin-bottom: 34.85px;
+    }
+    &__container{
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
@@ -38,19 +38,21 @@ $font-raleway: 'Raleway', sans-serif;
     &__img{
         width: 100px;
         height: 100px;
-        margin: 0 auto 51px;
+        margin: 0 auto 29px;
         @media (min-width: 768px) and (max-width: 1024px) {
            width: 85px;
            height: 85px;
+           margin: 0 auto 24px;
         }
         @media (min-width: 320px) and (max-width: 767px) {
            width: 75px;
            height: 75px;
+           margin: 0 auto 20px;
         }
     }
     &__title{
         text-align: center;
-        margin-bottom: 42px;
+        margin-bottom: 20.43px;
         font-family: $font-raleway;
         font-weight: 900;
         font-size: 24px;
@@ -58,9 +60,13 @@ $font-raleway: 'Raleway', sans-serif;
         @media (min-width: 768px) and (max-width: 1024px) {
             font-size: 18px;
             line-height: 21px;
+            margin-bottom: 4px;
         }
         @media (min-width: 320px) and (max-width: 767px) {
             width: 100%;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 2px;
         }
     }
     &__text{
@@ -76,6 +82,8 @@ $font-raleway: 'Raleway', sans-serif;
     }
     @media (min-width: 320px) and (max-width: 767px) {
         width: 100%;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 }
