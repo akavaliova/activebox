@@ -5,26 +5,12 @@
 }
 
 .benefits {
-  padding-bottom: 116px;
+  margin-bottom: 116px;
 }
 .benefits .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .benefits .container {
-    max-width: 1014px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .benefits .container {
-    max-width: 310px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
 }
 .benefits .benefits__container {
   display: flex;

@@ -7,27 +7,11 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 0 auto;
     padding: 0  15px;  
 }
-@mixin containerRulesTablet{
-    max-width: 1014px;
-    margin: 0 auto;
-    padding: 0  15px;
-}
-@mixin containerRulesMobile{
-    max-width: 310px;
-    margin: 0 auto;
-    padding: 0  15px;
-}
 
 .benefits{
-    padding-bottom: 116px;
+    margin-bottom: 116px;
     .container{
         @include containerRules();
-        @media (min-width: 768px) and (max-width: 1024px) {
-            @include containerRulesTablet();
-        }
-        @media (min-width: 320px) and (max-width: 767px) {
-            @include containerRulesMobile();
-        }
        }
     .benefits__container{
         display: flex;
