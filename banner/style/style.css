@@ -17,27 +17,15 @@
   width: 100%;
   z-index: 1;
 }
-.activebox__container {
+.activebox__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  max-width: 1170px;
-  padding: 0;
-}
-.activebox__container::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
   border-bottom: 1px solid #BABBC5;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  transform: translateY(-1px);
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .activebox__container::before {
-    display: none;
+  .activebox__wrapper {
+    border-bottom: transparent;
   }
 }
 .activebox__img {
@@ -46,6 +34,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .activebox__img {
+    width: 103.47px;
+    height: 14.35px;
+  }
 }
 .activebox__menu-items {
   display: flex;
@@ -204,10 +198,18 @@
   background-color: #FF4343;
   border: none;
   padding: 26px;
+  text-decoration: none;
+}
+.banner_btn:hover {
+  background-color: #E71414;
+}
+.banner_btn:active {
+  background-color: #FF4343;
+  box-shadow: 4px 4px 30px #FF4343;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .banner_btn {
-    max-width: 313px;
+    max-width: 314px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -224,7 +226,7 @@
   .hamburger {
     display: flex;
     width: 55px;
-    height: 55px;
+    height: 56px;
     justify-content: center;
     align-items: center;
   }

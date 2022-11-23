@@ -10,25 +10,13 @@
     left: 0;
     width: 100%;
     z-index: 1;
-    &__container{
+    &__wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-        max-width: 1170px;
-        padding: 0;
-        &::before{
-            content: "";
-            display: inline-block;
-            position: absolute;
-            border-bottom: 1px solid #BABBC5;
-            width: 100%;
-            top: 100%;
-            left: 0;
-            transform: translateY(-1px);
-            @media (min-width: 320px) and (max-width: 767px){
-                display: none;
-            }
+        border-bottom: 1px solid #BABBC5;
+        @media (min-width: 320px) and (max-width: 767px){
+            border-bottom: transparent;
         }
     }
     &__img{
@@ -37,6 +25,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 320px) and (max-width: 767px){
+            width:103.47px;
+            height: 14.35px;
+        }
     }
     &__menu{
         &-items{
@@ -183,8 +176,18 @@
             background-color: $btn-color;
             border: none;
             padding: 26px;
+            text-decoration: none;
+
+            &:hover{
+                background-color: #E71414;
+            }
+            &:active{
+                background-color: #FF4343;
+                box-shadow: 4px 4px 30px #FF4343;
+            }
+
             @media (min-width: 768px) and (max-width: 1024px){
-                max-width: 313px;
+                max-width: 314px;
             }
             @media (min-width: 320px) and (max-width: 767px){
                     max-width: 280px;
@@ -197,7 +200,7 @@
     @media (min-width: 320px) and (max-width: 767px){
             display: flex;
             width: 55px;
-            height: 55px;
+            height: 56px;
             justify-content: center;
             align-items: center;
         }
