@@ -38,21 +38,21 @@
     &__img{
         width: 100px;
         height: 100px;
-        margin: 0 auto 29px;
+        margin: 0 auto 51px;
         @media (min-width: 768px) and (max-width: 1024px) {
            width: 85px;
            height: 85px;
-           margin: 0 auto 24px;
+           margin: 0 auto 43px;
         }
         @media (min-width: 320px) and (max-width: 767px) {
            width: 75px;
            height: 75px;
-           margin: 0 auto 20px;
+           margin: 0 auto 37px;
         }
     }
     &__title{
         text-align: center;
-        margin-bottom: 20.43px;
+        margin-bottom: 42px;
         font-family: $font-raleway;
         font-weight: 900;
         font-size: 24px;
@@ -60,13 +60,13 @@
         @media (min-width: 768px) and (max-width: 1024px) {
             font-size: 18px;
             line-height: 21px;
-            margin-bottom: 4px;
+            margin-bottom: 23px;
         }
         @media (min-width: 320px) and (max-width: 767px) {
             width: 100%;
             font-size: 18px;
             line-height: 21px;
-            margin-bottom: 2px;
+            margin-bottom: 16px;
         }
     }
     &__text{
