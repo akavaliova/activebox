@@ -6,7 +6,15 @@
 .testimonial{
     display: grid;
     grid-template-columns: 47% 53%;
-    &__wrapper{
+    margin-bottom: 114px;
+    @media (min-width: 768px) and (max-width: 1024px){
+        margin-bottom: 77.5px;
+    }
+    @media (min-width: 320px) and (max-width: 767px){
+        margin-bottom: 34.5px;
+        grid-template-columns: 100%;
+    }
+        &__wrapper{
         position: relative;
         &::before{
             content: "";
@@ -25,6 +33,14 @@
     &__content {
         background-color: #5C3249;
         padding: 133px 170px 116px 129px;
+      
+        @media (min-width: 768px) and (max-width: 1024px){
+            padding: 47px 104px 110px 88px;
+        }
+
+        @media (min-width: 320px) and (max-width: 767px){
+            padding: 20px 25px 95px 20px;
+        }
         &-quote{
             font-family: 'Cardo', serif;
             font-weight: 400;
@@ -33,6 +49,11 @@
             line-height: 48px;
             color: #FFFFFF;
             margin-bottom: 17px;
+            @media (min-width: 768px) and (max-width: 1024px){
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px;
+            }
         }
         &-text{
             font-family: 'Raleway', sans-serif;
@@ -41,6 +62,10 @@
             font-size: 13px;
             line-height: 15px;
             color: #FFFFFF;
+            @media (min-width: 768px) and (max-width: 1024px){
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
     }
     &__slider{
@@ -48,6 +73,12 @@
         grid-column-end: 3;
         justify-self: center;
         margin-top: 31px;
+        @media (min-width: 768px) and (max-width: 1024px){
+            margin-top: 24px;
+        }
+        @media (min-width: 320px) and (max-width: 767px){
+            margin-top: 23px;
+        }
         &-dot{
             border: 1px solid #7E5D6F;
             width: 14px;
@@ -55,6 +86,9 @@
             border-radius: 50%;
             display: inline-block;
             margin-right: 25px;
+            @media (min-width: 768px) and (max-width: 1024px){
+                margin-right: 25.5px;
+            }
             &:active{
                 background-color: #7E5D6F;
             }
