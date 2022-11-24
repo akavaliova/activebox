@@ -3,35 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
-.testimonials__wrapper{
+.testimonial{
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-}
-.testimonials__wrapper-sliders{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
-}
-.testimonials__wrapper-img::before{
-    content: "";
-    display: block;
-    padding-top: 66%;
-}
-.testimonials__wrapper-img{
-    position: relative;
-}
-.testimonials__img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-@media (max-width: 767px){
-    .testimonials__wrapper{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+    grid-template-columns: 47% 53%;
+    &__wrapper{
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            padding-top: 66%;
+        }
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        background-color: #5C3249;
+        padding: 133px 170px 116px 129px;
+        &-quote{
+            font-family: 'Cardo', serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 36px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-bottom: 17px;
+        }
+        &-text{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+    }
+    &__slider{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+        margin-top: 31px;
+        &-dot{
+            border: 1px solid #7E5D6F;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 25px;
+            &:active{
+                background-color: #7E5D6F;
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
