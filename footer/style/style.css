@@ -2,4 +2,99 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.footer {
+  padding-top: 71px;
+  background-color: #353C65;
+}
+.footer__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.footer__wrap-copyright {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-self: center;
+}
+.footer__wrap-location--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.footer__wrap-location--adress {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.footer__wrap-share--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48.86px;
+}
+.footer__wrap-share--items {
+  display: flex;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  justify-content: center;
+}
+.footer__wrap-share--item {
+  list-style-type: none;
+}
+.footer__wrap-share--link {
+  width: 39px;
+  height: 39px;
+  border: 1px solid #C6CBCD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__wrap-about--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.footer__wrap-about--text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.footer__wrap-copyright {
+  padding-top: 21px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  text-align: center;
+}
+.footer__wrap-copyright--name {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
