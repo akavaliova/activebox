@@ -28,6 +28,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
         }
     }
     &__content {
@@ -78,6 +79,8 @@
         }
         @media (min-width: 320px) and (max-width: 767px){
             margin-top: 23px;
+            grid-column-start: 1;
+            grid-column-end: 2;
         }
         &-dot{
             border: 1px solid #7E5D6F;

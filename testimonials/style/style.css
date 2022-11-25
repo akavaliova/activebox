@@ -36,6 +36,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .testimonial__content {
   background-color: #5C3249;
@@ -95,6 +97,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .testimonial__slider {
     margin-top: 23px;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 .testimonial__slider-dot {
