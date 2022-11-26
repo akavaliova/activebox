@@ -74,6 +74,13 @@
   border: 0;
   padding: 24.5px;
 }
+.download__btn:hover {
+  background-color: #E71414;
+}
+.download__btn:active {
+  background-color: #FF4343;
+  box-shadow: 4px 4px 30px #FF4343;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .download__btn {
     max-width: 314px;

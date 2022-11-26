@@ -59,6 +59,15 @@
         background-color: #FF4343;
         border: 0;
         padding: 24.5px;
+
+        &:hover{
+            background-color: #E71414;
+        }
+        &:active{
+            background-color: #FF4343;
+            box-shadow: 4px 4px 30px #FF4343;
+        }
+        
         @media(min-width: 768px) and (max-width: 1024px){
             max-width: 314px;
             padding: 29.5px;
