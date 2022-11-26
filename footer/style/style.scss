@@ -1,24 +1,31 @@
 @import "reset";
+@import "mixins";
+@import "var";
+
 .container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1200px;
+    @include containerRules();
 }
 .footer{
-    padding-top: 71px;
+    padding: 71px 0 67px;
     background-color: #353C65;
     &__wrap{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
-        &-copyright{
-            grid-column-start: 1;
-            grid-column-end: 4;
-            justify-self: center;
+        @media (min-width: 768px) and (max-width: 1024px){
+            column-gap: 20px;
+            padding: 46px 0 41px;
         }
+        @media (min-width: 320px) and (max-width: 767px){
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+            justify-items: center;
+            padding: 34px 0 33px;
+        }
+
         &-location{
             &--title{
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-Raleway;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 21px;
@@ -26,18 +33,37 @@
                 text-transform: uppercase;
                 text-align: center;
                 margin-bottom: 29px;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 17.72px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 34px;  
+                }
             }
             &--adress{
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-Raleway;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 color: #FFFFFF;
+                text-align: center;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
             }
         }
         &-share{
             &--title{
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-Raleway;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 21px;
@@ -45,11 +71,27 @@
                 text-transform: uppercase;
                 text-align: center;
                 margin-bottom: 48.86px;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 17.72px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 34px;  
+                }
             }
             &--items{
                 display: flex;
                 column-gap: 27px;
                 justify-content: center;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    column-gap: 23px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    column-gap: 16.7px;
+                }
             }
             &--item{
                 list-style-type: none;
@@ -61,11 +103,19 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    width: 33px;
+                    height: 33px; 
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    width: 33px;
+                    height: 33px; 
+                }
             }
         }
         &-about{
             &--title{
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-Raleway;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 21px;
@@ -73,26 +123,65 @@
                 text-transform: uppercase;
                 text-align: center;
                 margin-bottom: 29px;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 17.72px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 34px;  
+                }
             }
             &--text{
-                font-family: 'Raleway', sans-serif;
+                font-family: $font-Raleway;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;
                 color: #FFFFFF;
-            }
-        }
-        &-copyright{
-            padding-top: 21px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 21px;
-            color: #808080;
-            text-align: center;
-            &--name{
-                color: #FFFFFF
+                text-align: center;
+                @media (min-width: 768px) and (max-width: 1024px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+                @media (min-width: 320px) and (max-width: 767px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
             }
         }
     }
+}
+.copyright{
+    padding: 24px 0;
+    background-color: #2C3154;
+    @media (min-width: 768px) and (max-width: 1024px){
+        padding: 14px 0;
+    }
+    @media (min-width: 320px) and (max-width: 767px){
+        padding: 29px 0 28px;
+    }
+    &__text{
+        font-family: $font-Raleway;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #808080;
+        text-align: center;
+        width: 100%;
+        max-width: 370px;
+        margin: 0 auto;
+        @media (min-width: 768px) and (max-width: 1024px){
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @media (min-width: 320px) and (max-width: 767px){
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &-name{
+            color: #FFFFFF
+        }
+    } 
 }
